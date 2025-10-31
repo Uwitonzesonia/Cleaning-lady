@@ -1,0 +1,74 @@
+/* ===================== Header Container ===================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 5%;
+  background-color: #000000; /* Black */
+  border-bottom: 2px solid #D4AF37; /* Gold accent */
+  flex-wrap: wrap;
+}
+
+/* ===================== Logo Section ===================== */
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  max-height: 55px;
+  height: auto;
+  width: auto;
+}
+
+.company-name {
+  font-size: 22px;
+  color: #D4AF37; /* Gold */
+  font-weight: 600;
+}
+
+/* ===================== Navigation ===================== */
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin-left: 22px;
+  color: #D4AF37; /* Gold */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.75;
+  transform: translateY(-2px);
+}
+
+/* ===================== Responsive Design ===================== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  .logo-box {
+    margin-bottom: 12px;
+    gap: 8px;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+}

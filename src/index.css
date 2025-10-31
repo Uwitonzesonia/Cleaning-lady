@@ -1,41 +1,14 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f8fafc;
-  color: #0f172a;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  background: #0b6b5a;
-  color: white;
-}
-
-header nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
+button {
+  background-color: #D4AF37; /* Gold */
+  color: #000000; /* Black Text */
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
   font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
-.hero {
-  padding: 40px;
-  background: #f0fdfa;
+button:hover {
+  opacity: 0.85;
 }
-
-.service-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.service-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-

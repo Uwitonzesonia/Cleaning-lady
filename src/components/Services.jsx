@@ -1,43 +1,29 @@
 import React from "react";
+import "../styles/services.css";
 
-const services = [
-  {
-    title: "Carpet Cleaning",
-    desc: "Deep cleaning of rugs and carpets.",
-    price: "From RWF 7,000",
-  },
-  {
-    title: "Mattress Cleaning",
-    desc: "Remove dust, stains and allergens.",
-    price: "From RWF 10,000",
-  },
-  {
-    title: "House Cleaning",
-    desc: "Full house deep clean services.",
-    price: "From RWF 20,000",
-  },
-  {
-    title: "Sofa Cleaning",
-    desc: "Professional upholstery cleaning.",
-    price: "From RWF 15,000",
-  },
-];
+const Services = () => {
+  const serviceList = [
+    "Sofa Deep Cleaning",
+    "Mattress Deep Cleaning",
+    "Carpet Cleaning",
+    "House Deep Cleaning",
+    "Office Cleaning",
+    "Car Interior Cleaning",
+    "Window / Glass Cleaning",
+  ];
 
-function Services() {
   return (
-    <section id="services">
-      <h2>Our Services</h2>
-      <div className="service-list">
-        {services.map(({ title, desc, price }, idx) => (
-          <article key={title} className="service-card">
-            <h3>{title}</h3>
-            <p>{desc}</p>
-            <span className="service-price">{price}</span>
-          </article>
+    <section className="services" id="services">
+      <h2>Our Cleaning Services</h2>
+      <div className="service-grid">
+        {serviceList.map((service, index) => (
+          <div key={index} className="service-card">
+            <p>{service}</p>
+          </div>
         ))}
       </div>
     </section>
   );
-}
+};
 
 export default Services;
