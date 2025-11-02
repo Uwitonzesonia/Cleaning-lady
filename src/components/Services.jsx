@@ -8,7 +8,6 @@ const Services = () => {
     "Carpet Cleaning",
     "House Deep Cleaning",
     "Office Cleaning",
-    "Car Interior Cleaning",
     "Window / Glass Cleaning",
   ];
 
