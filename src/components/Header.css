@@ -1,15 +1,15 @@
-/* ===================== Header Container ===================== */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 5%;
-  background-color: #000000; /* Black */
-  border-bottom: 2px solid #D4AF37; /* Gold accent */
+  background-color: #000000; 
+  border-bottom: 2px solid #D4AF37; 
   flex-wrap: wrap;
 }
 
-/* ===================== Logo Section ===================== */
+
 .logo-box {
   display: flex;
   align-items: center;
@@ -24,11 +24,11 @@
 
 .company-name {
   font-size: 22px;
-  color: #D4AF37; /* Gold */
+  color: #D4AF37; 
   font-weight: 600;
 }
 
-/* ===================== Navigation ===================== */
+
 nav {
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@ nav {
 
 nav a {
   margin-left: 22px;
-  color: #D4AF37; /* Gold */
+  color: #D4AF37; 
   text-decoration: none;
   font-weight: 500;
   font-size: 17px;
@@ -49,7 +49,7 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* ===================== Responsive Design ===================== */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
