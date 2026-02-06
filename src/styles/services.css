@@ -1,42 +1,52 @@
-.services-section {
-  padding: 60px 15px;
+.services {
+  padding: 40px 15px;
   background: #ffffff;
 }
 
-.services-title {
+.services h2 {
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   color: #0e8a4a;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.services-grid {
+/* GRID LAYOUT (responsive) */
+.service-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr; /* MOBILE: imwe munsi y’indi */
+}
+
+/* TABLET */
+@media (min-width: 600px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .service-card {
   background: #f6fff8;
   border-radius: 12px;
-  padding: 25px;
+  padding: 20px;
   border: 2px solid #b6e8c9;
+  text-align: center;
+  font-size: 18px;
+  color: #0e8a4a;
+  font-weight: 600;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
   border-color: #0e8a4a;
-}
-
-.service-card h3 {
-  color: #0e8a4a;
-  margin-bottom: 8px;
-  font-size: 20px;
-}
-
-.service-card p {
-  font-size: 15px;
-  color: #444;
+  background: #e9fff0;
 }

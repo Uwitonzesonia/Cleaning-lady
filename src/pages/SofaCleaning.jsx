@@ -1,26 +1,26 @@
 import React from "react";
-import sofa1 from "../assets/gallery/sofa 3.jpg";
-import sofa2 from "../assets/gallery/sofa 2.jpg";
-import sofa3 from "../assets/gallery/sofa1.jpg";
 import "../styles/ServiceDetail.css";
+import sofa1 from "../assets/gallery/sofa1.jpg";
+import sofa2 from "../assets/gallery/sofa 2.jpg";
+import sofa3 from "../assets/gallery/sofa 3.jpg";
 
-
-function SofaCleaning() {
+const SofaCleaning = () => {
   return (
     <div className="service-detail">
-      <h1>Sofa Deep Cleaning</h1>
-      <p>
-        We provide professional sofa deep cleaning using eco-friendly products
-        ensuring freshness, stain removal and hygiene.
-      </p>
+      <h2>Sofa Deep Cleaning</h2>
 
-      <div className="gallery">
-        <img src={sofa1} alt="sofa cleaning" />
-        <img src={sofa2} alt="sofa cleaning" />
-        <img src={sofa3} alt="sofa cleaning" />
+      <div className="service-images">
+        <img src={sofa1} alt="" />
+        <img src={sofa2} alt="" />
+        <img src={sofa3} alt="" />
       </div>
+
+      <div className="price-box">Starting at 15,000 Rwf</div>
+      <a className="whatsapp-btn" href="https://wa.me/250792880442">
+        Book on WhatsApp
+      </a>
     </div>
   );
-}
+};
 
 export default SofaCleaning;
